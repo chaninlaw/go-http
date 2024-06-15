@@ -15,6 +15,12 @@ touch .env
 echo -e 'DATABASE_URL=postgresql://username:password@localhost:5432/your_database_name\ADMIN_PASSWORD=12345678' > .env
 ```
 
+### Seed your database
+run following command:
+```sh
+go run cmd/seed/seed.go
+```
+
 ## Setup Request Header
 this repo have middleware for checking the request
 add this `X-API-KEY: Hello world` to headers
